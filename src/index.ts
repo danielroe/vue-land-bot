@@ -6,6 +6,7 @@ import deletedMessageLog from './features/deleted-message-log'
 import instructionMessage from './features/instruction-message'
 import jobsChannel from './features/jobs-channel'
 import ping from './features/ping'
+import quote from './features/quote'
 import spamDetection from './features/spam-detection'
 import statistics from './features/statistics'
 import { getConfig } from './fs/config'
@@ -28,6 +29,7 @@ const init = async () => {
     .use(instructionMessage)
     .use(jobsChannel)
     .use(ping)
+    .use(quote)
     .use(spamDetection)
     .use(statistics)
     .init()
