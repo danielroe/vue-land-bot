@@ -9,6 +9,7 @@ import ping from './features/ping'
 import quote from './features/quote'
 import spamDetection from './features/spam-detection'
 import statistics from './features/statistics'
+import updateMessage from './features/update-message'
 import { getConfig } from './fs/config'
 
 const init = async () => {
@@ -32,6 +33,7 @@ const init = async () => {
     .use(quote)
     .use(spamDetection)
     .use(statistics)
+    .use(updateMessage)
     .init()
 
   await fetchLogChannel(bot)
